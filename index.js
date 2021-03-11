@@ -40,7 +40,7 @@
 		devtools.isOpen = false;
 		console.dir(element);
 		var currentFire = devtools.isOpen ? Status.OPEN : Status.CLOSE;
-		if (devtools.lastFire == Status.NONE || currentFire != devtools.lastFire) {
+		if (true ||  devtools.lastFire == Status.NONE || currentFire != devtools.lastFire) {
 			// alert('fsdf')
 			emitEvent(devtools.isOpen);
 			devtools.lastFire = currentFire;
